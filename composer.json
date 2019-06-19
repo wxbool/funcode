@@ -1,0 +1,15 @@
+{
+    "name": "wxbool/funcode",
+    "description": "一些好玩的接口",
+    "type": "project",
+    "license": "mit",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "funcode\\": "src"
+        }
+    }
+}

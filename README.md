@@ -29,7 +29,7 @@ $app 是所有应用对象的集合，全局统一使用 $app 进行获取应用
 
 ## 调用示例
 
-### a.ocr图片文本识别（[`阿里云-读光`](https://duguang.aliyun.com/experience?type=doc&midtype=fulldoc&subtype=contract)）
+### 1. ocr图片文本识别（[`阿里云-读光`](https://duguang.aliyun.com/experience?type=doc&midtype=fulldoc&subtype=contract)）
 
 ```
 //获得 读光 应用
@@ -38,11 +38,11 @@ $duguang = $app->duguang;
 //请求图片识别
 
 //全文识别高精版识别
-$response = $duguang->general('https://img.alicdn.com/tfs/TB1GHXrXzDpK1RjSZFrXXa78VXa-912-1128.jpg')
+$response = $duguang->general('https://img.alicdn.com/tfs/TB1GHXrXzDpK1RjSZFrXXa78VXa-912-1128.jpg');
 //英文专项识别
-$response = $duguang->eng('https://img.alicdn.com/tfs/TB1GHXrXzDpK1RjSZFrXXa78VXa-912-1128.jpg')
+$response = $duguang->eng('https://img.alicdn.com/tfs/TB1GHXrXzDpK1RjSZFrXXa78VXa-912-1128.jpg');
 //网络电商图片识别
-$response = $duguang->ecommerce('https://img.alicdn.com/tfs/TB1GHXrXzDpK1RjSZFrXXa78VXa-912-1128.jpg')
+$response = $duguang->ecommerce('https://img.alicdn.com/tfs/TB1GHXrXzDpK1RjSZFrXXa78VXa-912-1128.jpg');
 
 if ($response) {
     //输出识别的文本（不换行）

@@ -92,6 +92,7 @@ class Duguang extends BaseServer {
         $thisCurl->referer('https://duguang.aliyun.com/experience?type=doc&midtype=fulldoc&subtype=contract');
         $thisCurl->params($params);
         $thisCurl->userAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36');
+        $thisCurl->isHttps(true);
         //Post
         $thisCurl->isPost(true);
         $thisCurl->timeOut(12);

@@ -187,7 +187,6 @@ class Http {
             curl_setopt($thisCurl, CURLOPT_POST ,true);
             curl_setopt($thisCurl, CURLOPT_URL, $this->url);
             if ($params) {
-                var_dump($params);
                 curl_setopt($thisCurl, CURLOPT_POSTFIELDS , $params);
             }
         } else {
